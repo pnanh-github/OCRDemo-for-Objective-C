@@ -13,6 +13,11 @@
 		84683F241BEF0AD100141386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84683F221BEF0AD100141386 /* Main.storyboard */; };
 		84683F261BEF0AD100141386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84683F251BEF0AD100141386 /* Assets.xcassets */; };
 		84683F291BEF0AD100141386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84683F271BEF0AD100141386 /* LaunchScreen.storyboard */; };
+		84683F321BEF119700141386 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84683F311BEF119700141386 /* TesseractOCR.framework */; };
+		84683F341BEF11B900141386 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 84683F331BEF11B900141386 /* tessdata */; };
+		84683F361BEF140200141386 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84683F351BEF140200141386 /* libstdc++.tbd */; };
+		84683F381BEF140900141386 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84683F371BEF140900141386 /* CoreImage.framework */; };
+		84683F3B1BEF208100141386 /* NoImages.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84683F3A1BEF208100141386 /* NoImages.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		84683F251BEF0AD100141386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84683F281BEF0AD100141386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84683F2A1BEF0AD100141386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84683F311BEF119700141386 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		84683F331BEF11B900141386 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		84683F351BEF140200141386 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		84683F371BEF140900141386 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		84683F3A1BEF208100141386 /* NoImages.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = NoImages.jpg; path = ../../../../Desktop/NoImages.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84683F381BEF140900141386 /* CoreImage.framework in Frameworks */,
+				84683F361BEF140200141386 /* libstdc++.tbd in Frameworks */,
+				84683F321BEF119700141386 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,7 @@
 		84683F0D1BEF0AD100141386 = {
 			isa = PBXGroup;
 			children = (
+				84683F391BEF140E00141386 /* Library */,
 				84683F181BEF0AD100141386 /* OCRDemo */,
 				84683F171BEF0AD100141386 /* Products */,
 			);
@@ -58,6 +72,8 @@
 		84683F181BEF0AD100141386 /* OCRDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84683F331BEF11B900141386 /* tessdata */,
+				84683F301BEF117400141386 /* 3rdParty */,
 				84683F1C1BEF0AD100141386 /* AppDelegate.h */,
 				84683F1D1BEF0AD100141386 /* AppDelegate.m */,
 				84683F1F1BEF0AD100141386 /* ViewController.h */,
@@ -74,9 +90,27 @@
 		84683F191BEF0AD100141386 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84683F3A1BEF208100141386 /* NoImages.jpg */,
 				84683F1A1BEF0AD100141386 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84683F301BEF117400141386 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				84683F311BEF119700141386 /* TesseractOCR.framework */,
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
+		84683F391BEF140E00141386 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				84683F371BEF140900141386 /* CoreImage.framework */,
+				84683F351BEF140200141386 /* libstdc++.tbd */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84683F291BEF0AD100141386 /* LaunchScreen.storyboard in Resources */,
+				84683F341BEF11B900141386 /* tessdata in Resources */,
 				84683F261BEF0AD100141386 /* Assets.xcassets in Resources */,
 				84683F241BEF0AD100141386 /* Main.storyboard in Resources */,
+				84683F3B1BEF208100141386 /* NoImages.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCRDemo",
+				);
 				INFOPLIST_FILE = OCRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nhattungmedia.OCRDemo;
@@ -272,6 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCRDemo",
+				);
 				INFOPLIST_FILE = OCRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nhattungmedia.OCRDemo;
